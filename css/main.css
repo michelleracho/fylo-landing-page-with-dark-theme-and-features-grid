@@ -202,12 +202,19 @@ body {
 }
 
 .perks__icon {
-  margin-bottom: 2.5rem;
+  width: 7.5rem;
+  margin: 0 auto;
+}
+
+.perks__icon img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .perks__title {
   font-size: 1.8rem;
-  margin-bottom: 1.2rem;
+  margin: 3rem 0 1.2rem;
 }
 
 .perks__description {
