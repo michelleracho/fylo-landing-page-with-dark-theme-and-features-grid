@@ -10,8 +10,8 @@
 
 html {
   font-size: 62.5%;
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -394,5 +394,53 @@ body {
   display: block;
   -webkit-transform: translateX(25%);
           transform: translateX(25%);
+}
+
+.sign-up {
+  background-color: #1c2431;
+  border-radius: 1rem;
+  padding: 3.5rem 2.5rem;
+  text-align: center;
+  -webkit-box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.25);
+}
+
+.sign-up__heading {
+  margin-bottom: 2rem;
+}
+
+.sign-up__text {
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.sign-up__input,
+.sign-up .cta {
+  width: 100%;
+}
+
+.sign-up__input {
+  font-family: inherit;
+  border: none;
+  outline: none;
+  margin-bottom: 2rem;
+  padding: 1.5rem 3rem;
+  border-radius: 3rem;
+}
+
+.sign-up__input::-webkit-input-placeholder {
+  color: rgba(28, 36, 49, 0.25);
+}
+
+.sign-up__input:-ms-input-placeholder {
+  color: rgba(28, 36, 49, 0.25);
+}
+
+.sign-up__input::-ms-input-placeholder {
+  color: rgba(28, 36, 49, 0.25);
+}
+
+.sign-up__input::placeholder {
+  color: rgba(28, 36, 49, 0.25);
 }
 /*# sourceMappingURL=main.css.map */
