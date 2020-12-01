@@ -1,0 +1,55 @@
+.pledge {
+  @include flexCenter;
+  height: 100vh;
+  margin: auto 1rem;
+
+  &__illustration {
+    width: 100%;
+    margin-bottom: 5rem;
+
+    img {
+      @include imgDefault;
+    }
+  }
+
+  &__container {
+    @include flexCenter;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    margin-bottom: 2rem;
+  }
+
+  &__see-more {
+    @include flexCenter;
+    flex-direction: row;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid currentColor;
+    align-self: flex-start;
+
+    &:link,
+    &:visited {
+      color: $color-accent-cyan;
+      text-decoration: none;
+    }
+
+    &:hover {
+      @media (hover: hover) {
+        color: $color-neutral-white;
+
+        .svg-bg {
+          fill: currentColor;
+        }
+      }
+    }
+
+    svg {
+      margin-left: 0.75rem;
+    }
+  }
+}

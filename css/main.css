@@ -191,14 +191,14 @@ body {
 .perks__list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(37rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(37rem, 1fr));
+  -ms-grid-columns: (minmax(33rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
   grid-gap: 7rem;
   text-align: center;
 }
 
 .perks__item {
-  padding: 0 2.7rem;
+  padding: 0 0.9rem;
 }
 
 .perks__icon {
@@ -212,5 +212,98 @@ body {
 
 .perks__description {
   line-height: 1.6;
+}
+
+.pledge {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  margin: auto 1rem;
+}
+
+.pledge__illustration {
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.pledge__illustration img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.pledge__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pledge__title {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.pledge__text {
+  margin-bottom: 2rem;
+}
+
+.pledge__see-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  flex-direction: row;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid currentColor;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.pledge__see-more:link, .pledge__see-more:visited {
+  color: #65e2d9;
+  text-decoration: none;
+}
+
+@media (hover: hover) {
+  .pledge__see-more:hover {
+    color: white;
+  }
+  .pledge__see-more:hover .svg-bg {
+    fill: currentColor;
+  }
+}
+
+.pledge__see-more svg {
+  margin-left: 0.75rem;
 }
 /*# sourceMappingURL=main.css.map */
