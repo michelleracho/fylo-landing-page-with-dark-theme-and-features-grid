@@ -344,6 +344,8 @@ body {
   background-color: #202a3c;
   border-radius: 3px;
   padding: 2.5rem;
+  -webkit-box-shadow: 0 0 0.6rem 0 rgba(255, 255, 255, 0.035);
+          box-shadow: 0 0 0.6rem 0 rgba(255, 255, 255, 0.035);
 }
 
 .testimonials__msg {
