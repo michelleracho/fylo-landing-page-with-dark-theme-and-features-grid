@@ -3,34 +3,22 @@
   min-height: 100vh;
 
   &__list {
+    width: 90%;
+
+    & > *:not(:last-child) {
+      margin-bottom: 2rem;
+    }
   }
 
   &__item {
     background-color: $color-primary-dark-blue-4;
     border-radius: 3px;
     padding: 2.5rem;
-
-    &:first-child {
-      position: relative;
-
-      &::before {
-        content: '"';
-        color: $color-accent-cyan;
-        position: absolute;
-        left: 0;
-        top: -0;
-        transform: translateY(-100%);
-      }
-    }
-
-    &:not(:last-child) {
-      margin-bottom: 2rem;
-    }
   }
 
   &__msg {
-    font-size: 1.25rem;
-    line-height: 1.6;
+    font-size: 1.1rem;
+    line-height: 1.8;
     margin-bottom: 2rem;
   }
 
@@ -57,7 +45,7 @@
   }
 
   &__name {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     letter-spacing: 0.5px;
   }
 
@@ -65,4 +53,14 @@
     font-size: 1rem;
     font-weight: 400;
   }
+}
+
+.bg-quotes-container {
+}
+
+.bg-quotes {
+  width: 2.5rem;
+  height: auto;
+  display: block;
+  transform: translateX(25%);
 }
