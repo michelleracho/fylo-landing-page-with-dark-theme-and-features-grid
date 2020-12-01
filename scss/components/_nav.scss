@@ -1,0 +1,14 @@
+.nav {
+  // border: 1px solid gold;
+  @include flexCenter;
+  flex-direction: row;
+
+  &__list {
+    @include flexCenter;
+    flex-direction: row;
+    list-style: none;
+  }
+
+  &__item {
+  }
+}

@@ -1,0 +1,82 @@
+// header
+.intro {
+  // border: 1px solid red;
+  @include flexCenter;
+  background-color: $color-primary-dark-blue-1;
+  width: 100%;
+  height: 80vh;
+  position: relative;
+
+  background: url(/images/bg-curvy-mobile.svg),
+    linear-gradient(
+      to bottom,
+      $color-primary-dark-blue-1 57%,
+      $color-primary-dark-blue-2 50%
+    );
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .nav {
+    font-size: 1.2rem;
+    font-family: $font-highlight;
+    justify-content: space-between;
+    width: 85%;
+    position: absolute;
+    top: 2rem;
+
+    &__item {
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+  }
+
+  .logo {
+    width: 100%;
+    max-width: 10rem;
+
+    img {
+      @include imgDefault;
+    }
+  }
+
+  &__illustration {
+    width: 80%;
+    transform: translateY(10%);
+
+    img {
+      @include imgDefault;
+    }
+  }
+
+  &__heading {
+    text-align: center;
+    // letter-spacing: 0.5px;
+
+    &--main {
+      font-size: 2.5rem;
+      font-family: $font-highlight;
+      font-weight: 700;
+      line-height: 1.4;
+      margin: 6.5rem auto 1.5rem;
+      padding: 0 2.3rem;
+    }
+    &--sub {
+      margin-bottom: 2.5rem;
+      line-height: 1.6;
+      padding: 0 4rem;
+    }
+  }
+}
+
+// main
+
+// footer
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}

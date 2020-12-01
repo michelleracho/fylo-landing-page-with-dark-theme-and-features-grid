@@ -4,3 +4,9 @@
   justify-content: center;
   flex-direction: column;
 }
+
+@mixin imgDefault {
+  width: 100%;
+  height: auto;
+  display: block;
+}

@@ -1,1 +1,177 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  background-color: #181f2a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 375px;
+  margin: 0 auto;
+}
+
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #1c2431;
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  background: url(/images/bg-curvy-mobile.svg), -webkit-gradient(linear, left top, left bottom, color-stop(57%, #1c2431), color-stop(50%, #181f2a));
+  background: url(/images/bg-curvy-mobile.svg), linear-gradient(to bottom, #1c2431 57%, #181f2a 50%);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.intro .nav {
+  font-size: 1.2rem;
+  font-family: "Raleway", sans-serif;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 85%;
+  position: absolute;
+  top: 2rem;
+}
+
+.intro .nav__item:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.intro .logo {
+  width: 100%;
+  max-width: 10rem;
+}
+
+.intro .logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.intro__illustration {
+  width: 80%;
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+}
+
+.intro__illustration img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.intro__heading {
+  text-align: center;
+}
+
+.intro__heading--main {
+  font-size: 2.5rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 6.5rem auto 1.5rem;
+  padding: 0 2.3rem;
+}
+
+.intro__heading--sub {
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+  padding: 0 4rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  flex-direction: row;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  flex-direction: row;
+  list-style: none;
+}
+
+.cta {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  padding: 1.5rem;
+  border-radius: 3rem;
+  background: -webkit-gradient(linear, left top, right top, color-stop(-50%, #65e2d9), to(#339ecc));
+  background: linear-gradient(to right, #65e2d9 -50%, #339ecc);
+  color: currentColor;
+  letter-spacing: 0.5px;
+  width: 60%;
+}
+/*# sourceMappingURL=main.css.map */

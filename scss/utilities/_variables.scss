@@ -11,4 +11,5 @@ $color-accent-light-red: hsl(0, 100%, 63%); // error
 $color-neutral-white: hsl(0, 0%, 100%);
 
 // FONT
-$font-default: 'Raleway', sans-serif;
+$font-default: 'Open Sans', sans-serif; // body
+$font-highlight: 'Raleway', sans-serif; // headings, cta, header nav

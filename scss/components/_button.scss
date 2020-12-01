@@ -1,0 +1,17 @@
+.cta {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: $font-highlight;
+  font-weight: 700;
+  padding: 1.5rem;
+  border-radius: 3rem;
+  background: linear-gradient(
+    to right,
+    $color-accent-cyan -50%,
+    $color-accent-blue
+  );
+  color: currentColor;
+  letter-spacing: 0.5px;
+  width: 60%;
+}
