@@ -6,7 +6,6 @@
   &__list {
     @include flexCenter;
     flex-direction: row;
-    list-style: none;
   }
 
   &__item {

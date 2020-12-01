@@ -5,6 +5,7 @@
   padding: 0;
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+  list-style: none;
 }
 
 html {
@@ -86,8 +87,8 @@ body {
 
 .intro__illustration {
   width: 80%;
-  -webkit-transform: translateY(10%);
-          transform: translateY(10%);
+  -webkit-transform: translateY(12%);
+          transform: translateY(12%);
 }
 
 .intro__illustration img {
@@ -113,6 +114,10 @@ body {
   margin-bottom: 2.5rem;
   line-height: 1.6;
   padding: 0 4rem;
+}
+
+.main {
+  padding: 0 2rem;
 }
 
 .attribution {
@@ -156,7 +161,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   flex-direction: row;
-  list-style: none;
 }
 
 .cta {
@@ -182,5 +186,31 @@ body {
   .cta:hover {
     background-position: left;
   }
+}
+
+.perks__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(37rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(37rem, 1fr));
+  grid-gap: 7rem;
+  text-align: center;
+}
+
+.perks__item {
+  padding: 0 2.7rem;
+}
+
+.perks__icon {
+  margin-bottom: 2.5rem;
+}
+
+.perks__title {
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.perks__description {
+  line-height: 1.6;
 }
 /*# sourceMappingURL=main.css.map */
