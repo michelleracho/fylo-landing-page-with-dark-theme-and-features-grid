@@ -109,10 +109,15 @@
 .footer {
   background-color: $color-primary-dark-blue-3;
   padding: 23rem 2rem 2rem;
+  width: 100%;
 
   .logo {
-    max-width: 50%;
+    width: 50%;
+    max-width: 20rem;
     margin-bottom: 3rem;
+
+    @include breakpoint(sm) {
+    }
   }
 
   &__list {
@@ -121,7 +126,7 @@
 
       .footer__item {
         display: grid;
-        grid-template-columns: 12% auto;
+        grid-template-columns: 4rem auto;
 
         &:not(:last-child) {
           margin-bottom: 2rem;
@@ -176,6 +181,9 @@
   .attribution {
     font-size: 11px;
     text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 
     a {
       color: hsl(228, 45%, 44%);

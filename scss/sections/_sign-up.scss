@@ -6,6 +6,11 @@
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.25);
   transform: translateY(50%);
 
+  @include breakpoint(sm) {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
   &__heading {
     margin-bottom: 2rem;
   }
@@ -16,11 +21,19 @@
   }
 
   &__form {
+    @include breakpoint(md) {
+      @include flexCenter;
+      flex-direction: row;
+    }
   }
 
   &__input,
   .cta {
     width: 100%;
+
+    @include breakpoint(md) {
+      flex: 1.5;
+    }
   }
 
   &__input {
@@ -30,6 +43,12 @@
     margin-bottom: 2rem;
     padding: 1.5rem 3rem;
     border-radius: 3rem;
+
+    @include breakpoint(md) {
+      margin-bottom: unset;
+      flex: 3;
+      margin-right: 2rem;
+    }
 
     &::placeholder {
       color: rgba($color-primary-dark-blue-1, 0.25);
