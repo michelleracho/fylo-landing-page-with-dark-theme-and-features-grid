@@ -111,6 +111,16 @@
   padding: 23rem 2rem 2rem;
   width: 100%;
 
+  @include breakpoint(md) {
+    padding-top: 18rem;
+  }
+
+  .logo-container {
+    align-items: flex-start;
+    max-width: $bp-xl;
+    margin: 0 auto;
+  }
+
   .logo {
     width: 50%;
     max-width: 20rem;
@@ -120,13 +130,30 @@
     }
   }
 
+  .footer-container {
+    @include flexCenter;
+
+    @include breakpoint(sm) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 5rem;
+    }
+  }
+
   &__list {
     &--info {
-      margin-bottom: 3rem;
+      width: 100%;
+
+      @include breakpoint(sm) {
+        width: unset;
+        max-width: 36rem;
+      }
 
       .footer__item {
         display: grid;
         grid-template-columns: 4rem auto;
+        margin-bottom: 3rem;
 
         &:not(:last-child) {
           margin-bottom: 2rem;
@@ -147,6 +174,10 @@
       flex-direction: row;
       margin: 8rem auto 2rem;
 
+      @include breakpoint(sm) {
+        margin: unset;
+      }
+
       .footer__item {
         @include flexCenter;
         width: 3.2rem;
@@ -166,15 +197,26 @@
   .nav {
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
+
+    @include breakpoint(sm) {
+      width: unset;
+    }
 
     &__list {
       flex-direction: column;
       align-items: flex-start;
-      margin-top: 3rem;
+      margin-top: 5rem;
+
+      @include breakpoint(sm) {
+        margin-top: unset;
+      }
     }
 
     &__item {
-      margin-top: 2rem;
+      &:not(:first-child) {
+        margin-top: 2rem;
+      }
     }
   }
 
@@ -184,6 +226,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    width: 100%;
 
     a {
       color: hsl(228, 45%, 44%);
