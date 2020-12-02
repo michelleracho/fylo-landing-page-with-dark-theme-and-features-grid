@@ -237,6 +237,12 @@
     }
 
     &__item {
+      &:hover {
+        @media (hover: hover) {
+          text-decoration: none;
+        }
+      }
+
       &:not(:first-child) {
         margin-top: 2rem;
       }

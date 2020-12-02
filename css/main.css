@@ -363,6 +363,12 @@ body {
   }
 }
 
+@media (hover: hover) {
+  .footer .nav__item:hover {
+    text-decoration: none;
+  }
+}
+
 .footer .nav__item:not(:first-child) {
   margin-top: 2rem;
 }
@@ -421,8 +427,15 @@ body {
   color: rgba(255, 255, 255, 0.8);
 }
 
+@media only screen and (min-width: 600px) {
+  .nav__item {
+    width: 8rem;
+  }
+}
+
 @media (hover: hover) {
   .nav__item:hover {
+    font-weight: 700;
     color: white;
     text-decoration: underline;
   }

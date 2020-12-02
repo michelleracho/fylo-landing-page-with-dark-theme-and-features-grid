@@ -13,8 +13,13 @@
     cursor: pointer;
     color: $color-neutral-white-text;
 
+    @include breakpoint(sm) {
+      width: 8rem;
+    }
+
     &:hover {
       @media (hover: hover) {
+        font-weight: 700;
         color: $color-neutral-white;
         text-decoration: underline;
       }
