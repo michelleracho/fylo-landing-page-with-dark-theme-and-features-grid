@@ -1,3 +1,11 @@
+.logo {
+  width: 100%;
+
+  img {
+    @include imgDefault;
+  }
+}
+
 // header
 .intro {
   // border: 1px solid red;
@@ -32,11 +40,7 @@
   }
 
   .logo {
-    width: 8.5rem;
-
-    img {
-      @include imgDefault;
-    }
+    max-width: 8.5rem;
   }
 
   &__illustration {
@@ -71,14 +75,84 @@
 // main
 .main {
   padding: 0 2rem;
+  position: relative;
 }
 
 // footer
-.attribution {
-  font-size: 11px;
-  text-align: center;
+.footer {
+  background-color: $color-primary-dark-blue-3;
+  padding: 23rem 2rem 2rem;
 
-  a {
-    color: hsl(228, 45%, 44%);
+  .logo {
+    max-width: 50%;
+    margin-bottom: 3rem;
+  }
+
+  &__list {
+    &--info {
+      margin-bottom: 3rem;
+
+      .footer__item {
+        display: grid;
+        grid-template-columns: 12% auto;
+
+        &:not(:last-child) {
+          margin-bottom: 2rem;
+        }
+
+        img {
+          // @include imgDefault;
+          transform: translateY(25%);
+        }
+
+        p {
+          line-height: 1.6;
+        }
+      }
+    }
+
+    &--socials {
+      @include flexCenter;
+      flex-direction: row;
+      margin: 8rem auto 2rem;
+
+      .footer__item {
+        @include flexCenter;
+        width: 3.2rem;
+        height: 3.2rem;
+        font-size: 1.4rem;
+        border: 1px solid currentColor;
+        border-radius: 50%;
+        margin: auto 0.75rem;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__item {
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__list {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 3rem;
+    }
+
+    &__item {
+      margin-top: 2rem;
+    }
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+
+    a {
+      color: hsl(228, 45%, 44%);
+    }
   }
 }

@@ -16,6 +16,10 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="./css/main.css" />
 
     <title>
@@ -240,29 +244,48 @@
       </section>
     </main>
 
-    <footer>
-      <ul>
-        <li>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua
+    <footer class="footer">
+      <figure class="logo">
+        <img src="./images/logo.svg" alt="Fylo logo" />
+      </figure>
+
+      <ul class="footer__list footer__list--info">
+        <li class="footer__item">
+          <img src="./images/icon-location.svg" alt="location" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua
+          </p>
         </li>
-        <li>+1-543-123-4567</li>
-        <li>example@fylo.com</li>
+        <li class="footer__item">
+          <img src="./images/icon-phone.svg" alt="location" />
+          <p>+1-543-123-4567</p>
+        </li>
+        <li class="footer__item">
+          <img src="./images/icon-email.svg" alt="location" />
+          <p>example@fylo.com</p>
+        </li>
       </ul>
 
-      <nav>
-        <h3>About Us</h3>
-        <ul>
-          <li>Jobs</li>
-          <li>Press</li>
-          <li>Blog</li>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">About Us</li>
+          <li class="nav__item">Jobs</li>
+          <li class="nav__item">Press</li>
+          <li class="nav__item">Blog</li>
         </ul>
-        <h3>Contact Us</h3>
-        <ul>
-          <li>Terms</li>
-          <li>Privacy</li>
+        <ul class="nav__list">
+          <li class="nav__item">Contact Us</li>
+          <li class="nav__item">Terms</li>
+          <li class="nav__item">Privacy</li>
         </ul>
       </nav>
+
+      <ul class="footer__list footer__list--socials">
+        <li class="footer__item"><i class="fab fa-facebook-f"></i></li>
+        <li class="footer__item"><i class="fab fa-twitter"></i></li>
+        <li class="footer__item"><i class="fab fa-instagram"></i></li>
+      </ul>
 
       <p class="attribution">
         Challenge by
