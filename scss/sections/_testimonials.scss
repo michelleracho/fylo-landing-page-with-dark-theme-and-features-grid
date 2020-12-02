@@ -1,21 +1,21 @@
 .testimonials {
+  width: 90%;
+  max-width: 40rem;
+  position: relative;
+  margin: 0 auto;
+
+  @include breakpoint(sm) {
+    width: 100%;
+    max-width: unset;
+  }
+
   &__list {
-    width: 90%;
-    max-width: 40rem;
     @include flexCenter;
     margin: 0 auto;
-    position: relative;
 
     @include breakpoint(sm) {
       flex-direction: row;
-      width: 100%;
-      max-width: unset;
-      // column-gap: 2rem;
     }
-
-    // & > * {
-    //   width: 100%;
-    // }
 
     & > *:not(:last-child) {
       margin-bottom: 2rem;

@@ -518,6 +518,7 @@ body {
   height: 100vh;
   max-width: 768px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -628,9 +629,21 @@ body {
   margin-left: 0.75rem;
 }
 
-.testimonials__list {
+.testimonials {
   width: 90%;
   max-width: 40rem;
+  position: relative;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 600px) {
+  .testimonials {
+    width: 100%;
+    max-width: unset;
+  }
+}
+
+.testimonials__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -645,7 +658,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 auto;
-  position: relative;
 }
 
 @media only screen and (min-width: 600px) {
@@ -654,8 +666,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: 100%;
-    max-width: unset;
   }
 }
 
