@@ -434,7 +434,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 100vh;
 }
 
 .testimonials__list {
