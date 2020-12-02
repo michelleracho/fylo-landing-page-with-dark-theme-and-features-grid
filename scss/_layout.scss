@@ -80,13 +80,19 @@
     // letter-spacing: 0.5px;
 
     &--main {
-      font-size: 2.5rem;
+      // font-size: 2.5rem;
+      font-size: clamp(2.5rem, 5vw, 3.2rem);
       font-family: $font-highlight;
       font-weight: 700;
       line-height: 1.4;
       margin: 6.5rem auto 1.5rem;
       padding: 0 2.3rem;
+
+      // @include breakpoint(sm) {
+      //   font-size: 2.5rem;
+      // }
     }
+
     &--sub {
       margin-bottom: 2.5rem;
       line-height: 1.6;
@@ -126,17 +132,18 @@
     max-width: 20rem;
     margin-bottom: 3rem;
 
-    @include breakpoint(sm) {
+    @include breakpoint(md) {
     }
   }
 
   .footer-container {
     @include flexCenter;
+    align-items: flex-start;
 
-    @include breakpoint(sm) {
+    @include breakpoint(md) {
       flex-direction: row;
       justify-content: space-between;
-      align-items: flex-start;
+      // align-items: flex-start;
       margin-bottom: 5rem;
     }
   }
@@ -144,16 +151,22 @@
   &__list {
     &--info {
       width: 100%;
+      max-width: 50rem;
 
-      @include breakpoint(sm) {
+      @include breakpoint(md) {
         width: unset;
         max-width: 36rem;
+        flex: 3;
       }
 
       .footer__item {
         display: grid;
         grid-template-columns: 4rem auto;
         margin-bottom: 3rem;
+
+        @include breakpoint(md) {
+          padding-right: 2rem;
+        }
 
         &:not(:last-child) {
           margin-bottom: 2rem;
@@ -174,7 +187,7 @@
       flex-direction: row;
       margin: 8rem auto 2rem;
 
-      @include breakpoint(sm) {
+      @include breakpoint(md) {
         margin: unset;
       }
 
@@ -199,8 +212,15 @@
     align-items: flex-start;
     width: 100%;
 
-    @include breakpoint(sm) {
+    @include breakpoint(md) {
       width: unset;
+      flex: 1;
+    }
+
+    &:first-of-type {
+      // @include breakpoint(sm) {
+      //   border: 1px solid red;
+      // }
     }
 
     &__list {
@@ -208,7 +228,7 @@
       align-items: flex-start;
       margin-top: 5rem;
 
-      @include breakpoint(sm) {
+      @include breakpoint(md) {
         margin-top: unset;
       }
     }
