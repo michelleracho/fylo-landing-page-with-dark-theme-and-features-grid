@@ -10,5 +10,14 @@
   }
 
   &__item {
+    cursor: pointer;
+    color: $color-neutral-white-text;
+
+    &:hover {
+      @media (hover: hover) {
+        color: $color-neutral-white;
+        text-decoration: underline;
+      }
+    }
   }
 }

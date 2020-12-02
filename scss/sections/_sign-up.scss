@@ -16,6 +16,7 @@
   }
 
   &__text {
+    color: $color-neutral-white-text;
     line-height: 1.6;
     margin-bottom: 2rem;
   }
@@ -37,17 +38,6 @@
   .cta {
     @include breakpoint(md) {
       flex: 1.5;
-    }
-  }
-
-  &__input-container {
-    margin-bottom: 3rem;
-    position: relative;
-
-    @include breakpoint(md) {
-      margin-bottom: unset;
-      flex: 3;
-      margin-right: 2rem;
     }
   }
 

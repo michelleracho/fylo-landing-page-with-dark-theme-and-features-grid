@@ -40,9 +40,13 @@
     position: absolute;
     top: 2rem;
 
+    @include breakpoint(sm) {
+      font-size: 1.6rem;
+    }
+
     &__item {
       &:not(:last-child) {
-        margin-right: 2rem;
+        margin-right: clamp(2rem, 5vw, 5rem);
       }
     }
   }
@@ -87,13 +91,10 @@
       line-height: 1.4;
       margin: 6.5rem auto 1.5rem;
       padding: 0 2.3rem;
-
-      // @include breakpoint(sm) {
-      //   font-size: 2.5rem;
-      // }
     }
 
     &--sub {
+      color: $color-neutral-white-text;
       margin-bottom: 2.5rem;
       line-height: 1.6;
       padding: 0 4rem;
@@ -116,6 +117,7 @@
   background-color: $color-primary-dark-blue-3;
   padding: 23rem 2rem 2rem;
   width: 100%;
+  color: $color-neutral-white-text;
 
   @include breakpoint(md) {
     padding-top: 18rem;
@@ -200,6 +202,12 @@
         border-radius: 50%;
         margin: auto 0.75rem;
         cursor: pointer;
+
+        &:hover {
+          @media (hover: hover) {
+            color: $color-accent-cyan;
+          }
+        }
       }
     }
   }
@@ -215,12 +223,6 @@
     @include breakpoint(md) {
       width: unset;
       flex: 1;
-    }
-
-    &:first-of-type {
-      // @include breakpoint(sm) {
-      //   border: 1px solid red;
-      // }
     }
 
     &__list {

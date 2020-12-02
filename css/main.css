@@ -102,8 +102,14 @@ body {
   top: 2rem;
 }
 
+@media only screen and (min-width: 600px) {
+  .intro .nav {
+    font-size: 1.6rem;
+  }
+}
+
 .intro .nav__item:not(:last-child) {
-  margin-right: 2rem;
+  margin-right: clamp(2rem, 5vw, 5rem);
 }
 
 .intro .logo {
@@ -149,6 +155,7 @@ body {
 }
 
 .intro__heading--sub {
+  color: rgba(255, 255, 255, 0.8);
   margin-bottom: 2.5rem;
   line-height: 1.6;
   padding: 0 4rem;
@@ -169,6 +176,7 @@ body {
   background-color: #0b1523;
   padding: 23rem 2rem 2rem;
   width: 100%;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 @media only screen and (min-width: 768px) {
@@ -312,6 +320,12 @@ body {
   cursor: pointer;
 }
 
+@media (hover: hover) {
+  .footer__list--socials .footer__item:hover {
+    color: #65e2d9;
+  }
+}
+
 .footer .nav {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -402,6 +416,18 @@ body {
   flex-direction: row;
 }
 
+.nav__item {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media (hover: hover) {
+  .nav__item:hover {
+    color: white;
+    text-decoration: underline;
+  }
+}
+
 .cta {
   cursor: pointer;
   border: none;
@@ -466,6 +492,7 @@ body {
 }
 
 .perks__description {
+  color: rgba(255, 255, 255, 0.8);
   line-height: 1.6;
 }
 
@@ -553,6 +580,7 @@ body {
 }
 
 .pledge__text {
+  color: rgba(255, 255, 255, 0.8);
   margin-bottom: 2rem;
   line-height: 1.6;
 }
@@ -583,7 +611,7 @@ body {
 
 @media (hover: hover) {
   .pledge__see-more:hover {
-    color: white;
+    color: rgba(255, 255, 255, 0.8);
   }
   .pledge__see-more:hover .svg-bg {
     fill: currentColor;
@@ -651,6 +679,7 @@ body {
 
 .testimonials__msg {
   font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.8);
   line-height: 1.8;
   margin-bottom: 2rem;
 }
@@ -687,6 +716,7 @@ body {
 }
 
 .author__title {
+  color: rgba(255, 255, 255, 0.8);
   font-size: 1rem;
   font-weight: 400;
 }
@@ -734,6 +764,7 @@ body {
 }
 
 .sign-up__text {
+  color: rgba(255, 255, 255, 0.8);
   line-height: 1.6;
   margin-bottom: 2rem;
 }
@@ -771,21 +802,6 @@ body {
     -webkit-box-flex: 1.5;
         -ms-flex: 1.5;
             flex: 1.5;
-  }
-}
-
-.sign-up__input-container {
-  margin-bottom: 3rem;
-  position: relative;
-}
-
-@media only screen and (min-width: 768px) {
-  .sign-up__input-container {
-    margin-bottom: unset;
-    -webkit-box-flex: 3;
-        -ms-flex: 3;
-            flex: 3;
-    margin-right: 2rem;
   }
 }
 

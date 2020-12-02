@@ -41,6 +41,7 @@
   }
 
   &__text {
+    color: $color-neutral-white-text;
     margin-bottom: 2rem;
     line-height: 1.6;
   }
@@ -59,7 +60,7 @@
 
     &:hover {
       @media (hover: hover) {
-        color: $color-neutral-white;
+        color: $color-neutral-white-text;
 
         .svg-bg {
           fill: currentColor;

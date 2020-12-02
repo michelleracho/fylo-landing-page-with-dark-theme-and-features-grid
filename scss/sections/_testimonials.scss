@@ -37,6 +37,7 @@
 
   &__msg {
     font-size: 1.1rem;
+    color: $color-neutral-white-text;
     line-height: 1.8;
     margin-bottom: 2rem;
   }
@@ -69,6 +70,7 @@
   }
 
   &__title {
+    color: $color-neutral-white-text;
     font-size: 1rem;
     font-weight: 400;
   }
