@@ -13,9 +13,9 @@
       // column-gap: 2rem;
     }
 
-    & > * {
-      width: 100%;
-    }
+    // & > * {
+    //   width: 100%;
+    // }
 
     & > *:not(:last-child) {
       margin-bottom: 2rem;
@@ -36,7 +36,8 @@
   }
 
   &__msg {
-    font-size: 1.1rem;
+    // font-size: 1.1rem;
+    font-size: clamp(1.1rem, 3vw, 1.3rem);
     color: $color-neutral-white-text;
     line-height: 1.8;
     margin-bottom: 2rem;

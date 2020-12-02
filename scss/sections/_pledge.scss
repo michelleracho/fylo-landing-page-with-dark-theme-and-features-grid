@@ -1,7 +1,9 @@
 .pledge {
   @include flexCenter;
   height: 100vh;
-  margin: auto 1rem;
+  // margin: auto 1rem;
+  max-width: $bp-md;
+  margin: 0 auto;
 
   @include breakpoint(md) {
     flex-direction: row;

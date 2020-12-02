@@ -108,7 +108,8 @@
   position: relative;
 
   @include breakpoint(sm) {
-    max-width: 90rem;
+    // max-width: 90rem;
+    max-width: $bp-lg;
   }
 }
 
