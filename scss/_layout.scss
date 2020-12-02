@@ -162,7 +162,7 @@
       .footer__item {
         display: grid;
         grid-template-columns: 4rem auto;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
 
         @include breakpoint(md) {
           padding-right: 2rem;

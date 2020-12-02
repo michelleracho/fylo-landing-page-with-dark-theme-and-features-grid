@@ -243,7 +243,7 @@ body {
   display: grid;
   -ms-grid-columns: 4rem auto;
       grid-template-columns: 4rem auto;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -738,6 +738,10 @@ body {
   margin-bottom: 2rem;
 }
 
+.sign-up__form {
+  position: relative;
+}
+
 @media only screen and (min-width: 768px) {
   .sign-up__form {
     display: -webkit-box;
@@ -763,7 +767,6 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-  .sign-up__input,
   .sign-up .cta {
     -webkit-box-flex: 1.5;
         -ms-flex: 1.5;
@@ -771,13 +774,29 @@ body {
   }
 }
 
+.sign-up__input-container {
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .sign-up__input-container {
+    margin-bottom: unset;
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+    margin-right: 2rem;
+  }
+}
+
 .sign-up__input {
   font-family: inherit;
   border: none;
   outline: none;
-  margin-bottom: 2rem;
   padding: 1.5rem 3rem;
   border-radius: 3rem;
+  margin-bottom: 3rem;
+  position: relative;
 }
 
 @media only screen and (min-width: 768px) {
@@ -804,5 +823,24 @@ body {
 
 .sign-up__input::placeholder {
   color: rgba(28, 36, 49, 0.25);
+}
+
+.error {
+  opacity: 0;
+  font-size: 1rem;
+  color: #ff4242;
+  position: absolute;
+  left: 3rem;
+  bottom: 50%;
+  -webkit-transform: translateY(25%);
+          transform: translateY(25%);
+}
+
+@media only screen and (min-width: 768px) {
+  .error {
+    bottom: 0;
+    -webkit-transform: translateY(125%);
+            transform: translateY(125%);
+  }
 }
 /*# sourceMappingURL=main.css.map */

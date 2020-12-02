@@ -21,6 +21,8 @@
   }
 
   &__form {
+    position: relative;
+
     @include breakpoint(md) {
       @include flexCenter;
       flex-direction: row;
@@ -30,9 +32,22 @@
   &__input,
   .cta {
     width: 100%;
+  }
 
+  .cta {
     @include breakpoint(md) {
       flex: 1.5;
+    }
+  }
+
+  &__input-container {
+    margin-bottom: 3rem;
+    position: relative;
+
+    @include breakpoint(md) {
+      margin-bottom: unset;
+      flex: 3;
+      margin-right: 2rem;
     }
   }
 
@@ -40,9 +55,10 @@
     font-family: inherit;
     border: none;
     outline: none;
-    margin-bottom: 2rem;
     padding: 1.5rem 3rem;
     border-radius: 3rem;
+    margin-bottom: 3rem;
+    position: relative;
 
     @include breakpoint(md) {
       margin-bottom: unset;
@@ -53,5 +69,25 @@
     &::placeholder {
       color: rgba($color-primary-dark-blue-1, 0.25);
     }
+
+    // for now, error always show when input is invalid
+    // &:invalid + .error {
+    //   opacity: 1;
+    // }
+  }
+}
+
+.error {
+  opacity: 0;
+  font-size: 1rem;
+  color: $color-accent-light-red;
+  position: absolute;
+  left: 3rem;
+  bottom: 50%;
+  transform: translateY(25%);
+
+  @include breakpoint(md) {
+    bottom: 0;
+    transform: translateY(125%);
   }
 }
