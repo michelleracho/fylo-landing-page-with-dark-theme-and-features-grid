@@ -20,6 +20,13 @@ body {
 
   @include flexCenter;
 
-  width: 375px;
+  width: 100%;
   margin: 0 auto;
+
+  @include breakpoint(xs) {
+    max-width: $bp-sm;
+  }
+  @include breakpoint(sm) {
+    max-width: unset;
+  }
 }

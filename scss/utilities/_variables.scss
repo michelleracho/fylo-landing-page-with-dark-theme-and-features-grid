@@ -13,3 +13,10 @@ $color-neutral-white: hsl(0, 0%, 100%);
 // FONT
 $font-default: 'Open Sans', sans-serif; // body
 $font-highlight: 'Raleway', sans-serif; // headings, cta, header nav
+
+// BREAKPOINTS
+$bp-xs: 375px;
+$bp-sm: 600px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xl: 1200px;

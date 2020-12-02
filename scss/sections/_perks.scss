@@ -1,9 +1,14 @@
 .perks {
   &__list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
-    grid-gap: 7rem;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap: 7rem;
     text-align: center;
+
+    @include breakpoint(sm) {
+      column-gap: 5rem;
+      row-gap: 7rem;
+    }
   }
 
   &__item {
@@ -15,7 +20,11 @@
     margin: 0 auto;
 
     img {
-      @include imgDefault;
+      // @include imgDefault;
+      height: 100%;
+      max-height: 7.5rem;
+      width: auto;
+      display: block;
     }
   }
 

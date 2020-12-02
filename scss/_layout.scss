@@ -13,7 +13,7 @@
   background-color: $color-primary-dark-blue-1;
   width: 100%;
   height: 100vh;
-  position: relative;
+  // position: relative;
 
   background: url(/images/bg-curvy-mobile.svg),
     linear-gradient(
@@ -23,6 +23,14 @@
     );
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
+
+  @include breakpoint(sm) {
+    background: url(/images/bg-curvy-desktop.svg), $color-primary-dark-blue-1;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+  }
 
   .nav {
     font-size: 1.2rem;
@@ -43,9 +51,24 @@
     max-width: 8.5rem;
   }
 
+  .intro-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+
+    @include breakpoint(sm) {
+      max-width: $bp-sm;
+    }
+  }
+
   &__illustration {
     width: 80%;
     transform: translateY(12%);
+    margin: 0 auto;
+
+    @include breakpoint(sm) {
+      // width: 100%;
+    }
 
     img {
       @include imgDefault;
@@ -76,6 +99,10 @@
 .main {
   padding: 0 2rem;
   position: relative;
+
+  @include breakpoint(sm) {
+    max-width: 90rem;
+  }
 }
 
 // footer

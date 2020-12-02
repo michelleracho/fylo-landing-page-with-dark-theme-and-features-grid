@@ -3,9 +3,22 @@
   height: 100vh;
   margin: auto 1rem;
 
+  @include breakpoint(md) {
+    flex-direction: row;
+    column-gap: 3rem;
+    height: unset;
+    margin: 13rem auto;
+  }
+
   &__illustration {
     width: 100%;
+    max-width: 40rem;
     margin-bottom: 5rem;
+
+    @include breakpoint(md) {
+      flex: 1;
+      margin-bottom: unset;
+    }
 
     img {
       @include imgDefault;
@@ -14,6 +27,11 @@
 
   &__container {
     @include flexCenter;
+    align-items: flex-start;
+
+    @include breakpoint(md) {
+      flex: 1;
+    }
   }
 
   &__title {
@@ -31,7 +49,6 @@
     flex-direction: row;
     padding-bottom: 0.5rem;
     border-bottom: 1px solid currentColor;
-    align-self: flex-start;
 
     &:link,
     &:visited {
